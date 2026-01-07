@@ -1,0 +1,397 @@
+/* ===================================
+   CONFIGURATION DE BASE
+   =================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: 'Inria Serif', Georgia, serif;
+  background-color: #D9BC87;
+  color: #000;
+  line-height: 1.6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ===================================
+   HEADER
+   =================================== */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  position: sticky;
+  top: 0;
+  background-color: #D9BC87;
+  z-index: 1000;
+}
+
+.logo svg {
+  width: 40px;
+  height: 40px;
+  display: block;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.language {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+}
+
+.menu-btn {
+  background: none;
+  border: none;
+  width: 30px;
+  height: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: 0;
+}
+
+.menu-btn span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: #000;
+  border-radius: 2px;
+}
+
+/* ===================================
+   HERO SECTION
+   =================================== */
+.hero {
+  position: relative;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.hero-image-container {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+}
+
+.hero-portrait {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  width: 200px;
+  height: auto;
+  z-index: 3;
+  filter: sepia(10%);
+  border-radius: 4px;
+}
+
+.hero-landscape {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 70%;
+  height: auto;
+  opacity: 0.7;
+  z-index: 1;
+}
+
+.hero-dinosaur {
+  position: absolute;
+  bottom: 40px;
+  right: 20px;
+  width: 120px;
+  height: auto;
+  opacity: 0.85;
+  z-index: 2;
+}
+
+.hero-text {
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: center;
+  padding: 25px 30px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+/* ===================================
+   SECTIONS
+   =================================== */
+.section {
+  padding: 30px 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 25px;
+  text-align: left;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #000;
+}
+
+/* ===================================
+   CARTES
+   =================================== */
+.card {
+  background-color: #DEC299;
+  border: 2px solid #000;
+  border-radius: 10px;
+  padding: 25px;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.card-image {
+  width: 100%;
+  max-width: 180px;
+  height: auto;
+  display: block;
+  margin: 0 auto 20px;
+  border-radius: 6px;
+}
+
+.card-who .card-image {
+  max-width: 150px;
+  border-radius: 8px;
+  filter: sepia(10%);
+}
+
+.discovery-img {
+  max-width: 200px;
+  filter: sepia(5%);
+}
+
+.card-subtitle {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.card-text {
+  font-size: 16px;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.card-text-small {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-align: center;
+  font-style: italic;
+}
+
+/* ===================================
+   BOUTONS
+   =================================== */
+.btn-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px 20px;
+  background-color: transparent;
+  border: 2px solid #000;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #000;
+  font-size: 15px;
+  font-weight: 500;
+  transition: all 0.3s;
+  margin: 0 auto;
+  max-width: fit-content;
+}
+
+.btn-link:active {
+  background-color: rgba(0, 0, 0, 0.1);
+  transform: scale(0.98);
+}
+
+.arrow {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* ===================================
+   SECTIONS SPÉCIFIQUES
+   =================================== */
+
+/* Film Section */
+.card-film {
+  text-align: center;
+  position: relative;
+}
+
+.film-poster {
+  max-width: 200px;
+  border-radius: 8px;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.camera-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 50px;
+  height: auto;
+  opacity: 0.7;
+}
+
+/* BU Section */
+.bu-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.bu-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.bu-header .section-title {
+  margin-bottom: 0;
+  border-bottom: none;
+  flex: 1;
+}
+
+.book-cover {
+  max-width: 160px;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+/* ===================================
+   FOOTER
+   =================================== */
+.footer {
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 40px 20px 30px;
+  margin-top: 50px;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.footer-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: opacity 0.3s;
+}
+
+.footer-nav a:active {
+  opacity: 0.7;
+}
+
+.footer-credit {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.footer-text {
+  font-size: 13px;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.footer-text a {
+  color: #D9BC87;
+  text-decoration: underline;
+}
+
+/* ===================================
+   RESPONSIVE
+   =================================== */
+@media (max-width: 480px) {
+  .hero-portrait {
+    width: 160px;
+    left: 15px;
+  }
+  
+  .hero-dinosaur {
+    width: 100px;
+    bottom: 30px;
+    right: 15px;
+  }
+  
+  .hero-text {
+    font-size: 16px;
+    padding: 20px;
+  }
+  
+  .section {
+    padding: 25px 15px;
+  }
+  
+  .section-title {
+    font-size: 22px;
+  }
+  
+  .card {
+    padding: 20px;
+  }
+  
+  .card-text {
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero-image-container {
+    height: 500px;
+  }
+  
+  .hero-portrait {
+    width: 280px;
+    left: 40px;
+  }
+  
+  .hero-dinosaur {
+    width: 150px;
+    right: 40px;
+  }
+  
+  .section {
+    padding: 40px 30px;
+  }
+  
+  .card {
+    padding: 30px;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}

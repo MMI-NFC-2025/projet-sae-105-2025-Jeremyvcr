@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Femme de science dans la littérature - Mary Anning</title>
+    <link rel="stylesheet" href="../src/css/mobile-optimized.css">
+    <link rel="stylesheet" href="../src/css/menu.css">
+    <style>
+        .litterature-content {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        .page-title-litterature {
+            font-family: 'Inria Serif', Georgia, serif;
+            font-size: 28px;
+            font-style: italic;
+            font-weight: 400;
+            text-align: center;
+            padding: 30px 20px 20px;
+            margin: 0;
+            line-height: 1.4;
+        }
+
+        .intro-text-section {
+            padding: 20px;
+            text-align: justify;
+        }
+
+        .intro-text-section p {
+            font-size: 14px;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        .intro-text-section strong {
+            font-weight: bold;
+        }
+
+        .books-section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .books-title {
+            font-family: 'Inria Serif', Georgia, serif;
+            font-size: 24px;
+            font-style: italic;
+            font-weight: 400;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .books-icon {
+            width: 40px;
+            height: 40px;
+        }
+
+        .books-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .book-item {
+            position: relative;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+
+        .book-item:active {
+            transform: scale(0.95);
+        }
+
+        .book-cover {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+            border: 2px solid #000;
+        }
+
+        @media (max-width: 480px) {
+            .page-title-litterature {
+                font-size: 24px;
+            }
+
+            .intro-text-section p {
+                font-size: 13px;
+            }
+
+            .books-grid {
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <svg width="40" height="40" viewBox="0 0 40 40">
+                <path d="M35 25c-2-3-4-5-6-6 1-1 2-3 2-5 0-3-2-5-5-5h-4c-2-6-7-9-12-9-3 0-5 1-7 3l-1 2v20c0 2 1 4 3 5l8 3c1 0 2 1 3 1h12c3 0 5-2 5-5 0-1 0-2-1-3 2-1 3-3 3-5s-1-3-2-4c1-1 2-2 2-3z" fill="#000"/>
+            </svg>
+        </div>
+        <div class="header-right">
+            <span class="lang">EN</span>
+            <button class="menu-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Menu Overlay -->
+    <div class="menu-overlay">
+        <div class="menu-header">
+            <div class="menu-logo">
+                <svg width="60" height="60" viewBox="0 0 60 60">
+                    <path d="M10 45 Q15 40, 20 45 L25 50 L20 55 L10 50 Z" fill="#000"/>
+                    <circle cx="17" cy="43" r="2" fill="#fff"/>
+                    <path d="M20 40 Q23 35, 25 30 L27 25" stroke="#000" stroke-width="2" fill="none"/>
+                </svg>
+            </div>
+            <span class="menu-lang">EN</span>
+            <button class="menu-close" aria-label="Fermer le menu">
+                <svg viewBox="0 0 40 40">
+                    <line x1="10" y1="10" x2="30" y2="30" />
+                    <line x1="30" y1="10" x2="10" y2="30" />
+                </svg>
+            </button>
+        </div>
+        <nav class="menu-content">
+            <a href="qui-est-ce.html" class="menu-item">Qui-est-ce ?</a>
+            <a href="decouvertes.html" class="menu-item">Ses découvertes</a>
+            <a href="litterature.html" class="menu-item">Femme de science dans la littérature</a>
+            <a href="index-mobile.html#film" class="menu-item">Le film : Ammonite</a>
+            <a href="index-mobile.html#bu" class="menu-item">Objet de la BU</a>
+            <a href="#projets" class="menu-item">Autres projets</a>
+        </nav>
+    </div>
+
+    <!-- Page Content -->
+    <main class="litterature-content">
+        <h1 class="page-title-litterature">Femme de science dans la littérature</h1>
+
+        <section class="intro-text-section">
+            <p>
+                Dans les livres comme dans l'histoire, leurs voix ont souvent été effacées... mais jamais oubliées.
+            </p>
+
+            <p>
+                Pendant des siècles, la science s'est écrite au masculin.
+                Les femmes y ont souvent été silencieuses héroïnes, figures secondaires ou sources d'inspiration. Rarement reconnues comme des chercheuses à part entière.
+            </p>
+
+            <p>
+                Dans les romans, elles apparaissent parfois comme des assistantes dévouées, des curieuses passionnées ou des femmes de savants, mais rarement comme les <strong>auteures</strong> de découvertes majeures.
+            </p>
+
+            <p>
+                Leur rôle scientifique est souvent relégué à l'arrière-plan, comme si la rigueur, la logique ou l'ambition étaient des qualités réservées aux hommes.
+            </p>
+
+            <p>
+                Pourtant, la littérature a aussi permis à certaines d'entre elles de retrouver leur voix.
+            </p>
+
+            <p>
+                Des écrivaines et auteurs contemporains réhabilitent aujourd'hui ces figures <strong>oubliées</strong> — comme Mary Anning, devenue symbole de la curiosité et du savoir effacé.
+            </p>
+
+            <p>
+                Des œuvres telles que <strong>Ammonite</strong> ou <strong>Remarkable Creatures</strong> (Créatures extraordinaires, de Tracy Chevalier) redonnent vie et émotion à ces femmes de science trop longtemps réduites au silence.
+            </p>
+
+            <p>
+                À travers les pages des livres, la mémoire se récrit :
+                celle de femmes qui ont observé, expérimenté, compris — mais que l'histoire a trop souvent fait taire.
+                La littérature devient alors leur revanche.
+            </p>
+        </section>
+
+        <section class="books-section">
+            <h2 class="books-title">
+                Œuvres qui en parlent aujourd'hui
+                <svg class="books-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                </svg>
+            </h2>
+
+            <div class="books-grid">
+                <div class="book-item">
+                    <img src="../assets/img/remarkable.avif" alt="Remarkable Creatures - Tracy Chevalier" class="book-cover">
+                </div>
+                <div class="book-item">
+                    <img src="../assets/img/hidden.avif" alt="Hidden Figures" class="book-cover">
+                </div>
+                <div class="book-item">
+                    <img src="../assets/img/radium.avif" alt="The Radium Girls - Kate Moore" class="book-cover">
+                </div>
+                <div class="book-item">
+                    <img src="../assets/img/measuring.avif" alt="Measuring the World" class="book-cover">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-credit">VICAIRE Jeremy MMI A2</p>
+            <div class="footer-links">
+                <a href="#apropos">A PROPOS</a>
+                <a href="contact.html">FORMULAIRE DE CONTACT</a>
+                <a href="glossaire.html">GLOSSAIRE</a>
+                <a href="mailto:jeremy.vicaire@edu.univ-fcomte.fr">MAILTO</a>
+            </div>
+            <p class="footer-text">
+                "projet réalisé en 2025 dans le cadre d'un exercice pédagogique au département 
+                <a href="https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/" target="_blank">MMi de Montbéliard</a>"
+            </p>
+        </div>
+    </footer>
+
+    <script src="../src/js/menu.js"></script>
+</body>
+</html>

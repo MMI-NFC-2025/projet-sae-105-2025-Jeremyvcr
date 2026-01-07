@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de contact - Mary Anning</title>
+    <link rel="stylesheet" href="../src/css/mobile-optimized.css">
+    <link rel="stylesheet" href="../src/css/menu.css">
+    <style>
+        .contact-content {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .contact-title {
+            font-family: 'Inria Serif', Georgia, serif;
+            font-size: 32px;
+            font-style: italic;
+            font-weight: 400;
+            text-align: center;
+            margin-bottom: 50px;
+            color: #000;
+        }
+
+        .form-group {
+            margin-bottom: 35px;
+        }
+
+        .form-label {
+            font-family: 'Inria Serif', Georgia, serif;
+            font-size: 20px;
+            font-style: italic;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+            color: #000;
+        }
+
+        .form-icon {
+            width: 28px;
+            height: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid #000;
+            border-radius: 50%;
+        }
+
+        .form-icon svg {
+            width: 16px;
+            height: 16px;
+        }
+
+        .form-input {
+            width: 100%;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 8px;
+            background-color: rgba(255, 255, 255, 0.5);
+            font-size: 16px;
+            font-family: 'Inria Serif', Georgia, serif;
+            transition: background-color 0.3s;
+        }
+
+        .form-input:focus {
+            outline: none;
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+
+        .form-input::placeholder {
+            color: rgba(0, 0, 0, 0.3);
+        }
+
+        @media (max-width: 480px) {
+            .contact-title {
+                font-size: 28px;
+            }
+
+            .form-label {
+                font-size: 18px;
+            }
+
+            .form-input {
+                padding: 12px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <svg width="40" height="40" viewBox="0 0 40 40">
+                <path d="M35 25c-2-3-4-5-6-6 1-1 2-3 2-5 0-3-2-5-5-5h-4c-2-6-7-9-12-9-3 0-5 1-7 3l-1 2v20c0 2 1 4 3 5l8 3c1 0 2 1 3 1h12c3 0 5-2 5-5 0-1 0-2-1-3 2-1 3-3 3-5s-1-3-2-4c1-1 2-2 2-3z" fill="#000"/>
+            </svg>
+        </div>
+        <div class="header-right">
+            <span class="lang">EN</span>
+            <button class="menu-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Menu Overlay -->
+    <div class="menu-overlay">
+        <div class="menu-header">
+            <div class="menu-logo">
+                <svg width="60" height="60" viewBox="0 0 60 60">
+                    <path d="M10 45 Q15 40, 20 45 L25 50 L20 55 L10 50 Z" fill="#000"/>
+                    <circle cx="17" cy="43" r="2" fill="#fff"/>
+                    <path d="M20 40 Q23 35, 25 30 L27 25" stroke="#000" stroke-width="2" fill="none"/>
+                </svg>
+            </div>
+            <span class="menu-lang">EN</span>
+            <button class="menu-close" aria-label="Fermer le menu">
+                <svg viewBox="0 0 40 40">
+                    <line x1="10" y1="10" x2="30" y2="30" />
+                    <line x1="30" y1="10" x2="10" y2="30" />
+                </svg>
+            </button>
+        </div>
+        <nav class="menu-content">
+            <a href="qui-est-ce.html" class="menu-item">Qui-est-ce ?</a>
+            <a href="decouvertes.html" class="menu-item">Ses découvertes</a>
+            <a href="litterature.html" class="menu-item">Femme de science dans la littérature</a>
+            <a href="index-mobile.html#film" class="menu-item">Le film : Ammonite</a>
+            <a href="index-mobile.html#bu" class="menu-item">Objet de la BU</a>
+            <a href="#projets" class="menu-item">Autres projets</a>
+        </nav>
+    </div>
+
+        </nav>
+    </div>
+
+    <!-- Page Content -->
+    <main class="contact-content">
+        <h1 class="contact-title">Formulaire de contact</h1>
+
+        <form class="contact-form" action="#" method="post">
+            <div class="form-group">
+                <label class="form-label">
+                    Nom
+                    <span class="form-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                    </span>
+                </label>
+                <input type="text" class="form-input" name="nom" required>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">
+                    Prénom
+                    <span class="form-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                        </svg>
+                    </span>
+                </label>
+                <input type="text" class="form-input" name="prenom" required>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">
+                    Date de naissance
+                    <span class="form-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M12 16v-4M12 8h.01"></path>
+                        </svg>
+                    </span>
+                </label>
+                <input type="date" class="form-input" name="date_naissance" required>
+            </div>
+
+            <div class="form-group">
+                <label class="form-label">
+                    Adresse mail
+                    <span class="form-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                    </span>
+                </label>
+                <input type="email" class="form-input" name="email" required>
+            </div>
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="footer-credit">VICAIRE Jeremy MMI A2</p>
+            <div class="footer-links">
+                <a href="#apropos">A PROPOS</a>
+                <a href="contact.html">FORMULAIRE DE CONTACT</a>
+                <a href="glossaire.html">GLOSSAIRE</a>
+                <a href="mailto:jeremy.vicaire@edu.univ-fcomte.fr">MAILTO</a>
+            </div>
+            <p class="footer-text">
+                "projet réalisé en 2025 dans le cadre d'un exercice pédagogique au département 
+                <a href="https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/" target="_blank">MMi de Montbéliard</a>"
+            </p>
+        </div>
+    </footer>
+
+    <script src="../src/js/menu.js"></script>
+</body>
+</html>

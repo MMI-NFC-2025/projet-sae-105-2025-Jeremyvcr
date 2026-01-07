@@ -1,0 +1,261 @@
+/* ===================================
+   PAGE QUI EST-CE
+   =================================== */
+
+.qui-content {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.page-title {
+  font-family: 'Jomolhari', serif;
+  font-size: 28px;
+  font-weight: 400;
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+  border-bottom: 2px solid #000;
+}
+
+/* ===================================
+   INTRODUCTION
+   =================================== */
+.intro-section {
+  padding: 20px;
+  text-align: center;
+}
+
+.intro-text {
+  font-size: 15px;
+  line-height: 1.6;
+  font-style: italic;
+}
+
+/* ===================================
+   SECTION MARY ANNING
+   =================================== */
+.mary-section {
+  padding: 20px;
+  position: relative;
+}
+
+.mary-portrait-container {
+  float: right;
+  width: 140px;
+  margin: 0 0 15px 15px;
+  shape-outside: margin-box;
+}
+
+.mary-portrait-main {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 2px solid #000;
+  filter: sepia(15%);
+}
+
+.text-columns p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 12px;
+  text-align: justify;
+}
+
+/* ===================================
+   EFFET MATILDA
+   =================================== */
+.matilda-section {
+  padding: 30px 20px;
+  background-color: #DEC299;
+  border-top: 3px solid #000;
+  border-bottom: 3px solid #000;
+  margin: 20px 0;
+}
+
+.section-title-matilda {
+  font-family: 'Jomolhari', serif;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.matilda-content {
+  position: relative;
+}
+
+.matilda-image-container {
+  float: left;
+  width: 100px;
+  margin: 0 15px 15px 0;
+}
+
+.matilda-dino {
+  width: 100%;
+  height: auto;
+  opacity: 0.6;
+}
+
+.matilda-text p {
+  font-size: 13px;
+  line-height: 1.6;
+  margin-bottom: 12px;
+  text-align: justify;
+}
+
+.matilda-text strong {
+  font-weight: bold;
+}
+
+/* ===================================
+   FRISE DES MATILDA
+   =================================== */
+.frise-section {
+  padding: 30px 20px;
+  background-color: #E8D4A8;
+}
+
+.section-title-frise {
+  font-family: 'Jomolhari', serif;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.frise-container {
+  display: grid;
+  grid-template-columns: 1fr 280px 1fr;
+  gap: 15px;
+  align-items: start;
+}
+
+.frise-left,
+.frise-right {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.frise-right {
+  margin-top: 80px;
+}
+
+.scientist-card {
+  text-align: center;
+}
+
+.scientist-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #000;
+  margin-bottom: 8px;
+  filter: sepia(15%);
+}
+
+.scientist-name {
+  font-size: 12px;
+  font-weight: bold;
+  margin: 5px 0 2px 0;
+}
+
+.scientist-years {
+  font-size: 11px;
+  color: #333;
+  margin: 0;
+}
+
+/* ===================================
+   SQUELETTE
+   =================================== */
+.frise-center {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 20px;
+}
+
+.skeleton-container {
+  width: 280px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skeleton-svg {
+  width: 100%;
+  height: auto;
+  min-height: 600px;
+}
+
+.skeleton-img {
+  width: 100%;
+  height: auto;
+  opacity: 0.8;
+  display: block;
+  margin: 0 auto;
+}
+
+/* ===================================
+   RESPONSIVE
+   =================================== */
+@media (max-width: 480px) {
+  .page-title {
+    font-size: 24px;
+  }
+  
+  .mary-portrait-container {
+    width: 120px;
+  }
+  
+  .text-columns p {
+    font-size: 13px;
+  }
+  
+  .frise-container {
+    grid-template-columns: 1fr 80px 1fr;
+    gap: 10px;
+  }
+  
+  .scientist-photo {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .scientist-name {
+    font-size: 11px;
+  }
+  
+  .scientist-years {
+    font-size: 10px;
+  }
+  
+  .skeleton-container {
+    width: 70px;
+  }
+}
+
+@media (max-width: 360px) {
+  .mary-portrait-container {
+    float: none;
+    width: 150px;
+    margin: 0 auto 15px;
+  }
+  
+  .frise-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .frise-center {
+    display: none;
+  }
+  
+  .frise-right {
+    margin-top: 0;
+  }
+}

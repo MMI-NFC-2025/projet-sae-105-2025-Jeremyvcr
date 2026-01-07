@@ -1,0 +1,134 @@
+/* ===================================
+   PAGE SES DÉCOUVERTES
+   =================================== */
+
+.decouvertes-content {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.page-title {
+  font-family: 'Jomolhari', serif;
+  font-size: 28px;
+  font-weight: 400;
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+  border-bottom: 2px solid #000;
+}
+
+/* ===================================
+   INTRODUCTION
+   =================================== */
+.intro-section {
+  padding: 20px;
+  text-align: center;
+}
+
+.intro-text {
+  font-size: 15px;
+  line-height: 1.6;
+  font-style: italic;
+}
+
+/* ===================================
+   DÉCOUVERTES DÉTAILLÉES
+   =================================== */
+.discovery-detail {
+  padding: 30px 20px;
+  border-bottom: 2px solid #ccc;
+}
+
+.discovery-detail:last-of-type {
+  border-bottom: none;
+}
+
+.discovery-title {
+  font-family: 'Jomolhari', serif;
+  font-size: 26px;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #000;
+}
+
+.discovery-content-detail {
+  position: relative;
+}
+
+.discovery-content-detail p {
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+.discovery-content-detail strong {
+  font-weight: bold;
+}
+
+/* ===================================
+   IMAGES DES DÉCOUVERTES
+   =================================== */
+.discovery-image-detail {
+  float: right;
+  width: 160px;
+  margin: 0 0 15px 15px;
+  shape-outside: margin-box;
+}
+
+.detail-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 2px solid #000;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Alternance des positions d'images */
+.discovery-detail:nth-child(odd) .discovery-image-detail {
+  float: right;
+  margin: 0 0 15px 15px;
+}
+
+.discovery-detail:nth-child(even) .discovery-image-detail {
+  float: left;
+  margin: 0 15px 15px 0;
+}
+
+/* ===================================
+   RESPONSIVE
+   =================================== */
+@media (max-width: 480px) {
+  .page-title {
+    font-size: 24px;
+  }
+  
+  .discovery-title {
+    font-size: 22px;
+  }
+  
+  .discovery-image-detail {
+    width: 140px;
+  }
+  
+  .discovery-content-detail p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 360px) {
+  .discovery-image-detail {
+    float: none !important;
+    width: 100%;
+    max-width: 200px;
+    margin: 15px auto !important;
+    display: block;
+  }
+  
+  .detail-img {
+    display: block;
+    margin: 0 auto;
+  }
+}

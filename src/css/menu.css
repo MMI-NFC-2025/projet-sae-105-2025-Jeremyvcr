@@ -1,0 +1,127 @@
+/* ===================================
+   MENU HAMBURGER
+   =================================== */
+
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #D9BC87;
+  background-image: url('../img/montagne.avif');
+  background-size: cover;
+  background-position: center;
+  z-index: 9999;
+  display: none;
+  overflow-y: auto;
+}
+
+.menu-overlay::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(217, 188, 135, 0.85);
+  z-index: 1;
+}
+
+.menu-overlay.active {
+  display: block;
+}
+
+.menu-header {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.menu-logo svg {
+  width: 60px;
+  height: 60px;
+}
+
+.menu-lang {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+}
+
+.menu-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.menu-close svg {
+  width: 40px;
+  height: 40px;
+  stroke: #000;
+  stroke-width: 3;
+}
+
+.menu-content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 40px 40px;
+  gap: 35px;
+}
+
+.menu-item {
+  font-family: 'Inria Serif', Georgia, serif;
+  font-size: 28px;
+  font-style: italic;
+  color: #000;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+  display: block;
+  line-height: 1.3;
+}
+
+.menu-item:active {
+  transform: translateX(10px);
+}
+
+/* Animation d'ouverture */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.menu-overlay.active .menu-item {
+  animation: slideIn 0.4s ease forwards;
+}
+
+.menu-overlay.active .menu-item:nth-child(1) { animation-delay: 0.1s; }
+.menu-overlay.active .menu-item:nth-child(2) { animation-delay: 0.15s; }
+.menu-overlay.active .menu-item:nth-child(3) { animation-delay: 0.2s; }
+.menu-overlay.active .menu-item:nth-child(4) { animation-delay: 0.25s; }
+.menu-overlay.active .menu-item:nth-child(5) { animation-delay: 0.3s; }
+.menu-overlay.active .menu-item:nth-child(6) { animation-delay: 0.35s; }
+
+/* Responsive */
+@media (max-width: 480px) {
+  .menu-item {
+    font-size: 24px;
+  }
+  
+  .menu-content {
+    padding: 30px 30px;
+    gap: 30px;
+  }
+}
