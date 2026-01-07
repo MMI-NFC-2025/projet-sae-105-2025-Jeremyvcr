@@ -3,8 +3,8 @@
 
 À compléter :
 
-- NOM :
-- PRÉNOM :
-- GROUPE :
+- NOM : VICAIRE
+- PRÉNOM : Jerermy
+- GROUPE : A2
 - URL du site :
-- URL FIGMA :
+- URL FIGMA : https://www.figma.com/design/uBchaRoJHXRinZ5GW47ZQz/Untitled?node-id=0-1&t=b7zBLPwMcCTJb40U-1
