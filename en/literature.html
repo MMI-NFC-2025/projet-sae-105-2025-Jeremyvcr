@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Femme de science dans la littérature - Mary Anning</title>
+    <title>Women of science in literature - Mary Anning</title>
     <link rel="stylesheet" href="../src/css/mobile-optimized.css">
     <link rel="stylesheet" href="../src/css/menu.css">
     <style>
@@ -48,7 +48,6 @@
             font-family: 'Inria Serif', Georgia, serif;
             font-size: 24px;
             font-style: italic;
-            font-weight: 400;
             margin-bottom: 30px;
             display: flex;
             align-items: center;
@@ -57,8 +56,8 @@
         }
 
         .books-icon {
-            width: 40px;
-            height: 40px;
+            width: 30px;
+            height: 30px;
         }
 
         .books-grid {
@@ -70,33 +69,22 @@
         }
 
         .book-item {
-            position: relative;
-            cursor: pointer;
-            transition: transform 0.3s;
-        }
-
-        .book-item:active {
-            transform: scale(0.95);
+            display: flex;
+            justify-content: center;
         }
 
         .book-cover {
             width: 100%;
+            max-width: 200px;
             height: auto;
             border-radius: 8px;
-            box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.3);
+            box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
             border: 2px solid #000;
         }
 
         @media (max-width: 480px) {
-            .page-title-litterature {
-                font-size: 24px;
-            }
-
-            .intro-text-section p {
-                font-size: 13px;
-            }
-
             .books-grid {
+                grid-template-columns: 1fr;
                 gap: 15px;
             }
         }
@@ -109,7 +97,7 @@
             <img src="../assets/img/logo%20dinausore.png" alt="Logo" style="width: 50px; height: auto;">
         </a>
         <div class="header__actions">
-            <a href="../en/literature.html" class="header__lang">EN</a>
+            <a href="../fr/litterature.html" class="header__lang">FR</a>
             <button class="header__menu-toggle" aria-label="Menu">
                 <span></span>
                 <span></span>
@@ -124,8 +112,8 @@
             <a href="index-mobile.html" class="menu__logo">
                 <img src="../assets/img/logo%20dinausore.png" alt="Logo" style="width: 60px; height: auto;">
             </a>
-            <a href="../en/literature.html" class="menu__lang">EN</a>
-            <button class="menu__close" aria-label="Fermer le menu">
+            <a href="../fr/litterature.html" class="menu__lang">FR</a>
+            <button class="menu__close" aria-label="Close menu">
                 <svg viewBox="0 0 40 40">
                     <line x1="10" y1="10" x2="30" y2="30" />
                     <line x1="30" y1="10" x2="10" y2="30" />
@@ -133,59 +121,59 @@
             </button>
         </div>
         <nav class="menu__nav">
-            <a href="qui-est-ce.html" class="menu__link">Qui-est-ce ?</a>
-            <a href="decouvertes.html" class="menu__link">Ses découvertes</a>
-            <a href="litterature.html" class="menu__link">Femme de science dans la littérature</a>
-            <a href="film.html" class="menu__link">Le film : Ammonite</a>
-            <a href="bu.html" class="menu__link">Objet de la BU</a>
-            <a href="autres-projets.html" class="menu__link">Autres projets</a>
+            <a href="who-is-she.html" class="menu__link">Who is she?</a>
+            <a href="discoveries.html" class="menu__link">Her discoveries</a>
+            <a href="literature.html" class="menu__link">Women of science in literature</a>
+            <a href="film.html" class="menu__link">The film: Ammonite</a>
+            <a href="library.html" class="menu__link">Library object</a>
+            <a href="other-projects.html" class="menu__link">Other projects</a>
         </nav>
     </div>
 
     <!-- Page Content -->
     <main class="litterature-content">
-        <h1 class="page-title-litterature">Femme de science dans la littérature</h1>
+        <h1 class="page-title-litterature">Women of science in literature</h1>
 
         <section class="intro-text-section">
             <p>
-                Dans les livres comme dans l'histoire, leurs voix ont souvent été effacées... mais jamais oubliées.
+                In books as in history, their voices have often been erased... but never forgotten.
             </p>
 
             <p>
-                Pendant des siècles, la science s'est écrite au masculin.
-                Les femmes y ont souvent été silencieuses héroïnes, figures secondaires ou sources d'inspiration. Rarement reconnues comme des chercheuses à part entière.
+                For centuries, science has been written in the masculine.
+                Women have often been silent heroines, secondary figures or sources of inspiration. Rarely recognized as full-fledged researchers.
             </p>
 
             <p>
-                Dans les romans, elles apparaissent parfois comme des assistantes dévouées, des curieuses passionnées ou des femmes de savants, mais rarement comme les <strong>auteures</strong> de découvertes majeures.
+                In novels, they sometimes appear as devoted assistants, passionate curious minds or wives of scholars, but rarely as the <strong>authors</strong> of major discoveries.
             </p>
 
             <p>
-                Leur rôle scientifique est souvent relégué à l'arrière-plan, comme si la rigueur, la logique ou l'ambition étaient des qualités réservées aux hommes.
+                Their scientific role is often relegated to the background, as if rigor, logic or ambition were qualities reserved for men.
             </p>
 
             <p>
-                Pourtant, la littérature a aussi permis à certaines d'entre elles de retrouver leur voix.
+                Yet, literature has also allowed some of them to find their voice again.
             </p>
 
             <p>
-                Des écrivaines et auteurs contemporains réhabilitent aujourd'hui ces figures <strong>oubliées</strong> — comme Mary Anning, devenue symbole de la curiosité et du savoir effacé.
+                Contemporary writers and authors are now rehabilitating these <strong>forgotten</strong> figures — like Mary Anning, who has become a symbol of curiosity and erased knowledge.
             </p>
 
             <p>
-                Des œuvres telles que <strong>Ammonite</strong> ou <strong>Remarkable Creatures</strong> (Créatures extraordinaires, de Tracy Chevalier) redonnent vie et émotion à ces femmes de science trop longtemps réduites au silence.
+                Works such as <strong>Ammonite</strong> or <strong>Remarkable Creatures</strong> (by Tracy Chevalier) bring life and emotion back to these women of science who were silenced for too long.
             </p>
 
             <p>
-                À travers les pages des livres, la mémoire se récrit :
-                celle de femmes qui ont observé, expérimenté, compris — mais que l'histoire a trop souvent fait taire.
-                La littérature devient alors leur revanche.
+                Through the pages of books, memory is rewritten:
+                that of women who observed, experimented, understood — but whom history too often silenced.
+                Literature then becomes their revenge.
             </p>
         </section>
 
         <section class="books-section">
             <h2 class="books-title">
-                Œuvres qui en parlent aujourd'hui
+                Works that talk about them today
                 <svg class="books-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
                     <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
@@ -210,18 +198,18 @@
     </main>
 
     <!-- Footer -->
-        <footer class="footer">
+    <footer class="footer">
         <div class="footer__content">
             <div class="footer__links">
-                <a href="apropos.html">A PROPOS</a>
-                <a href="contact.html">FORMULAIRE DE CONTACT</a>
-                <a href="glossaire.html">GLOSSAIRE</a>
+                <a href="about.html">ABOUT</a>
+                <a href="contact.html">CONTACT FORM</a>
+                <a href="glossary.html">GLOSSARY</a>
                 <a href="mailto:jeremy.vicaire@edu.univ-fcomte.fr">MAILTO</a>
             </div>
             <p class="footer__credit">VICAIRE Jeremy MMI A2</p>
             <p class="footer__info">
-                "projet réalisé en 2025 dans le cadre d'un exercice pédagogique au département 
-                <a href="https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/" target="_blank">MMi de Montbéliard</a>"
+                "project created in 2025 as part of an educational exercise at the 
+                <a href="https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/" target="_blank">MMI department of Montbéliard</a>"
             </p>
         </div>
     </footer>

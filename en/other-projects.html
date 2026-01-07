@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Other Projects - Mary Anning</title>
+    <link rel="stylesheet" href="../src/css/mobile-optimized.css">
+    <link rel="stylesheet" href="../src/css/menu.css">
+    <style>
+        .projets-content {
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 40px 20px 60px;
+            background-color: #d4c5a9;
+            min-height: 100vh;
+        }
+
+        .projets-title {
+            font-family: 'Inria Serif', Georgia, serif;
+            font-size: 36px;
+            font-style: italic;
+            font-weight: 400;
+            text-align: center;
+            margin-bottom: 50px;
+            color: #000;
+        }
+
+        .projet-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .projet-item {
+            margin-bottom: 35px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .projet-icon {
+            width: 50px;
+            height: 50px;
+            flex-shrink: 0;
+        }
+
+        .projet-link {
+            font-family: 'Inria Serif', Georgia, serif;
+            font-size: 22px;
+            font-style: italic;
+            color: #000;
+            text-decoration: underline;
+            transition: opacity 0.2s;
+        }
+
+        .projet-link:hover {
+            opacity: 0.7;
+        }
+
+        @media (max-width: 480px) {
+            .projets-title {
+                font-size: 28px;
+            }
+
+            .projet-icon {
+                width: 40px;
+                height: 40px;
+            }
+
+            .projet-link {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <a href="index-mobile.html" class="header__logo">
+            <img src="../assets/img/logo%20dinausore.png" alt="Logo" style="width: 50px; height: auto;">
+        </a>
+        <div class="header__actions">
+            <a href="../fr/autres-projets.html" class="header__lang">FR</a>
+            <button class="header__menu-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Menu Overlay -->
+    <div class="menu">
+        <div class="menu__header">
+            <a href="index-mobile.html" class="menu__logo">
+                <img src="../assets/img/logo%20dinausore.png" alt="Logo" style="width: 60px; height: auto;">
+            </a>
+            <a href="../fr/autres-projets.html" class="menu__lang">FR</a>
+            <button class="menu__close" aria-label="Close menu">
+                <svg viewBox="0 0 40 40">
+                    <line x1="10" y1="10" x2="30" y2="30" />
+                    <line x1="30" y1="10" x2="10" y2="30" />
+                </svg>
+            </button>
+        </div>
+        <nav class="menu__nav">
+            <a href="who-is-she.html" class="menu__link">Who is she?</a>
+            <a href="discoveries.html" class="menu__link">Her discoveries</a>
+            <a href="literature.html" class="menu__link">Women of science in literature</a>
+            <a href="film.html" class="menu__link">The film: Ammonite</a>
+            <a href="library.html" class="menu__link">Library object</a>
+            <a href="other-projects.html" class="menu__link">Other projects</a>
+        </nav>
+    </div>
+
+    <!-- Page Content -->
+    <main class="projets-content">
+        <h1 class="projets-title">Other projects:</h1>
+        
+        <ul class="projet-list">
+            <li class="projet-item">
+                <img src="../assets/img/loupe.svg" alt="" class="projet-icon">
+                <a href="https://leonie-pruniaux.fr" class="projet-link" target="_blank">Léonie PRUNIAUX's project:</a>
+            </li>
+
+            <li class="projet-item">
+                <img src="../assets/img/loupe.svg" alt="" class="projet-icon">
+                <a href="https://noemie-caritey.fr" class="projet-link" target="_blank">Noémie CARITEY's project:</a>
+            </li>
+
+            <li class="projet-item">
+                <img src="../assets/img/loupe.svg" alt="" class="projet-icon">
+                <a href="https://noa-grevillot.fr" class="projet-link" target="_blank">Noa GREVILLOT's project:</a>
+            </li>
+
+            <li class="projet-item">
+                <img src="../assets/img/loupe.svg" alt="" class="projet-icon">
+                <a href="https://evan-gichtenaere.fr" class="projet-link" target="_blank">Evan GICHTENAERE's project:</a>
+            </li>
+
+            <li class="projet-item">
+                <img src="../assets/img/loupe.svg" alt="" class="projet-icon">
+                <a href="https://titouan-perros.fr" class="projet-link" target="_blank">Titouan PERROS's project:</a>
+            </li>
+
+            <li class="projet-item">
+                <img src="../assets/img/loupe.svg" alt="" class="projet-icon">
+                <a href="https://clement-bertrand.fr" class="projet-link" target="_blank">Clément BERTRAND's project:</a>
+            </li>
+
+            <li class="projet-item">
+                <img src="../assets/img/loupe.svg" alt="" class="projet-icon">
+                <a href="https://mahcy-ralambo.fr" class="projet-link" target="_blank">Mahcy RALAMBO's project:</a>
+            </li>
+
+            <li class="projet-item">
+                <img src="../assets/img/loupe.svg" alt="" class="projet-icon">
+                <a href="https://jehat-bakiray.fr" class="projet-link" target="_blank">Jehat BAKIRAY's project:</a>
+            </li>
+        </ul>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__links">
+                <a href="about.html">ABOUT</a>
+                <a href="contact.html">CONTACT FORM</a>
+                <a href="glossary.html">GLOSSARY</a>
+                <a href="mailto:jeremy.vicaire@edu.univ-fcomte.fr">MAILTO</a>
+            </div>
+            <p class="footer__credit">VICAIRE Jeremy MMI A2</p>
+            <p class="footer__info">
+                "project created in 2025 as part of an educational exercise at the 
+                <a href="https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/" target="_blank">MMI department of Montbéliard</a>"
+            </p>
+        </div>
+    </footer>
+
+    <script src="../src/js/menu.js"></script>
+</body>
+</html>

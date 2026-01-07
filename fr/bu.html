@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objet de la BU - Mary Anning</title>
+    <link rel="stylesheet" href="../src/css/mobile-optimized.css">
+    <link rel="stylesheet" href="../src/css/menu.css">
+    <style>
+        .bu-page {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        .bu-page__title {
+            font-family: 'Inria Serif', Georgia, serif;
+            font-size: 28px;
+            font-style: italic;
+            font-weight: 400;
+            text-align: center;
+            padding: 30px 20px 20px;
+            margin: 0;
+        }
+
+        .bu-page__content {
+            padding: 20px;
+        }
+
+        .bu-page__section-title {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .bu-page__content p {
+            font-size: 14px;
+            line-height: 1.7;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .bu-page__book-cover {
+            display: flex;
+            justify-content: center;
+            margin: 30px 0;
+            position: relative;
+        }
+
+        .bu-page__book-cover img {
+            max-width: 280px;
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
+            border: 2px solid #000;
+        }
+
+        .bu-page__book-icon {
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            opacity: 0.3;
+        }
+
+        .bu-page__book-icon--top {
+            top: -20px;
+            left: 20px;
+            transform: rotate(-15deg);
+        }
+
+        .bu-page__book-icon--bottom {
+            bottom: -20px;
+            right: 20px;
+            transform: rotate(15deg);
+        }
+
+        .bu-page__link-title {
+            font-size: 16px;
+            font-weight: bold;
+            margin: 40px 0 15px;
+        }
+
+        @media (max-width: 480px) {
+            .bu-page__title {
+                font-size: 24px;
+            }
+
+            .bu-page__content p {
+                font-size: 13px;
+            }
+
+            .bu-page__book-cover img {
+                max-width: 220px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <a href="index-mobile.html" class="header__logo">
+            <img src="../assets/img/logo%20dinausore.png" alt="Logo" style="width: 50px; height: auto;">
+        </a>
+        <div class="header__actions">
+            <a href="../en/library.html" class="header__lang">EN</a>
+            <button class="header__menu-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Menu Overlay -->
+    <div class="menu">
+        <div class="menu__header">
+            <a href="index-mobile.html" class="menu__logo">
+                <img src="../assets/img/logo%20dinausore.png" alt="Logo" style="width: 60px; height: auto;">
+            </a>
+            <a href="../en/library.html" class="menu__lang">EN</a>
+            <button class="menu__close" aria-label="Fermer le menu">
+                <svg viewBox="0 0 40 40">
+                    <line x1="10" y1="10" x2="30" y2="30" />
+                    <line x1="30" y1="10" x2="10" y2="30" />
+                </svg>
+            </button>
+        </div>
+        <nav class="menu__nav">
+            <a href="qui-est-ce.html" class="menu__link">Qui-est-ce ?</a>
+            <a href="decouvertes.html" class="menu__link">Ses découvertes</a>
+            <a href="litterature.html" class="menu__link">Femme de science dans la littérature</a>
+            <a href="film.html" class="menu__link">Le film : Ammonite</a>
+            <a href="bu.html" class="menu__link">Objet de la BU</a>
+            <a href="autres-projets.html" class="menu__link">Autres projets</a>
+        </nav>
+    </div>
+
+    <!-- Page Content -->
+    <main class="bu-page">
+        <h1 class="bu-page__title">Objet de la BU</h1>
+
+        <section class="bu-page__content">
+            <h2 class="bu-page__section-title">Résumer :</h2>
+            
+            <p>
+                Ce livre explique comment les grandes extinctions ont marqué l'histoire de la vie sur Terre.
+            </p>
+
+            <p>
+                L'auteur, Éric Buffetaut, paléontologue reconnu, explore les causes possibles de la disparition des dinosaures il y a environ 66 millions d'années. Il présente les différentes hypothèses scientifiques : chute d'un astéroïde, éruptions volcaniques massives, changements climatiques...
+            </p>
+
+            <p>
+                Mais le livre ne s'arrête pas aux dinosaures : il montre que ces extinctions massives, aussi destructrices soient-elles, ont aussi permis l'apparition de nouvelles formes de vie. Chaque crise a façonné le monde vivant tel que nous le connaissons aujourd'hui.
+            </p>
+
+            <div class="bu-page__book-cover">
+                <svg class="bu-page__book-icon bu-page__book-icon--top" viewBox="0 0 50 50">
+                    <path d="M10,10 L15,5 L15,40 L10,45 Z" fill="#000"/>
+                    <rect x="15" y="10" width="20" height="30" fill="#8B7355" rx="1"/>
+                    <rect x="35" y="12" width="5" height="28" fill="#000"/>
+                </svg>
+                
+                <img src="../assets/img/ericbuffe.avif" alt="La fin des dinosaures - Éric Buffetaut">
+                
+                <svg class="bu-page__book-icon bu-page__book-icon--bottom" viewBox="0 0 50 50">
+                    <path d="M10,10 L15,5 L15,40 L10,45 Z" fill="#000"/>
+                    <rect x="15" y="10" width="20" height="30" fill="#8B7355" rx="1"/>
+                    <rect x="35" y="12" width="5" height="28" fill="#000"/>
+                </svg>
+            </div>
+
+            <h2 class="bu-page__link-title">Lien avec ma Matilda :</h2>
+
+            <p>
+                Dans <em>La fin des dinosaures</em>, Éric Buffetaut nous plonge au cœur des grandes extinctions de la Terre — ces moments où la vie disparaît pour mieux renaître.
+            </p>
+
+            <p>
+                En étudiant les fossiles, il révèle que chaque crise de la pierre efface la mémoire du monde effacé, prêt à raconter son histoire à ceux qui savent écouter.
+            </p>
+
+            <p>
+                Cette idée résonne profondément avec l'effet Matilda.
+            </p>
+
+            <p>
+                De tout, comme les fossiles témoignent d'une vie oubliée, les femmes de science effacées de l'histoire sont elles aussi les "fossiles" de la connaissance humaine : des traces précieuses, longtemps invisibles, que l'on redécouvre peu à peu.
+            </p>
+
+            <p>
+                À travers le temps, des chercheuses comme Mary Anning ont exhumé les secrets du passé, sans que leur nom ne survive à leurs découvertes.
+            </p>
+
+            <p>
+                Aujourd'hui, grâce à la science et à la mémoire, leurs histoires refont surface — comme un fossile délicatement dégagé de la roche.
+            </p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__links">
+                <a href="apropos.html">A PROPOS</a>
+                <a href="contact.html">FORMULAIRE DE CONTACT</a>
+                <a href="glossaire.html">GLOSSAIRE</a>
+                <a href="mailto:jeremy.vicaire@edu.univ-fcomte.fr">MAILTO</a>
+            </div>
+            <p class="footer__credit">VICAIRE Jeremy MMI A2</p>
+            <p class="footer__info">
+                "projet réalisé en 2025 dans le cadre d'un exercice pédagogique au département 
+                <a href="https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/" target="_blank">MMi de Montbéliard</a>"
+            </p>
+        </div>
+    </footer>
+
+    <script src="../src/js/menu.js"></script>
+</body>
+</html>

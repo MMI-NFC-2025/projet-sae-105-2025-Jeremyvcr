@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le film : Ammonite - Mary Anning</title>
+    <link rel="stylesheet" href="../src/css/mobile-optimized.css">
+    <link rel="stylesheet" href="../src/css/menu.css">
+    <style>
+        .film-page {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        .film-page__title {
+            font-family: 'Inria Serif', Georgia, serif;
+            font-size: 28px;
+            font-style: italic;
+            font-weight: 400;
+            text-align: center;
+            padding: 30px 20px 20px;
+            margin: 0;
+        }
+
+        .film-page__intro {
+            padding: 20px;
+            text-align: center;
+            font-style: italic;
+            line-height: 1.7;
+        }
+
+        .film-page__content {
+            padding: 20px;
+        }
+
+        .film-page__content p {
+            font-size: 14px;
+            line-height: 1.7;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .film-page__content strong {
+            font-weight: bold;
+        }
+
+        .film-page__video {
+            margin: 30px 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .film-page__video video {
+            width: 100%;
+            max-width: 560px;
+            border-radius: 8px;
+            border: 2px solid #000;
+            box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        @media (max-width: 480px) {
+            .film-page__title {
+                font-size: 24px;
+            }
+
+            .film-page__content p {
+                font-size: 13px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <a href="index-mobile.html" class="header__logo">
+            <img src="../assets/img/logo%20dinausore.png" alt="Logo" style="width: 50px; height: auto;">
+        </a>
+        <div class="header__actions">
+            <a href="../en/film.html" class="header__lang">EN</a>
+            <button class="header__menu-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Menu Overlay -->
+    <div class="menu">
+        <div class="menu__header">
+            <a href="index-mobile.html" class="menu__logo">
+                <img src="../assets/img/logo%20dinausore.png" alt="Logo" style="width: 60px; height: auto;">
+            </a>
+            <a href="../en/film.html" class="menu__lang">EN</a>
+            <button class="menu__close" aria-label="Fermer le menu">
+                <svg viewBox="0 0 40 40">
+                    <line x1="10" y1="10" x2="30" y2="30" />
+                    <line x1="30" y1="10" x2="10" y2="30" />
+                </svg>
+            </button>
+        </div>
+        <nav class="menu__nav">
+            <a href="qui-est-ce.html" class="menu__link">Qui-est-ce ?</a>
+            <a href="decouvertes.html" class="menu__link">Ses découvertes</a>
+            <a href="litterature.html" class="menu__link">Femme de science dans la littérature</a>
+            <a href="film.html" class="menu__link">Le film : Ammonite</a>
+            <a href="bu.html" class="menu__link">Objet de la BU</a>
+            <a href="autres-projets.html" class="menu__link">Autres projets</a>
+        </nav>
+    </div>
+
+    <!-- Page Content -->
+    <main class="film-page">
+        <h1 class="film-page__title">Le film : Ammonite</h1>
+
+        <p class="film-page__intro">
+            Ammonite est une plongée dans la vie d'une femme que l'histoire a voulu faire — mais dont la passion résonne encore.
+        </p>
+
+        <section class="film-page__content">
+            <p>
+                <strong>Ammonite</strong> (2020), réalisé par Francis Lee, raconte la vie de Mary Anning, célèbre paléontologue autodidacte du XIX<sup>e</sup> siècle, interprétée par Kate Winslet.
+            </p>
+
+            <p>
+                Le film retrace son <strong>quotidien</strong> à Lyme Regis, au bord des falaises où elle cherche des fossiles, et son improbable rencontre avec Charlotte Murchison (jouée par Saoirse Ronan).
+            </p>
+
+            <p>
+                À travers leurs regards, le film montre la solitude, la passion et la place des femmes dans la science et la société.
+            </p>
+
+            <div class="film-page__video">
+                <video controls poster="../assets/img/afficheammonite.avif">
+                    <source src="../assets/video/AMMONITE%20-%20BANDE%20ANNONCE%20OFFICIELLE_720p.mp4" type="video/mp4">
+                    Votre navigateur ne supporte pas la lecture de vidéos.
+                </video>
+            </div>
+
+            <p>
+                Dans <em>Ammonite</em>, la mer, la pierre et le silence dévoilent des vies oubliées, sculptées par le temps.
+            </p>
+
+            <p>
+                Loin du spectaculaire, le film choisit la <strong>justesse et la sensualité</strong>, pour raconter la vie d'une femme effacée par l'histoire mais animée d'une force immense, libre, curieuse et déterminée, cherchant à comprendre le monde autant qu'à trouver sa place dans un univers qui ne la reconnaît pas.
+            </p>
+
+            <p>
+                Le film illustre parfaitement <strong>l'effet Matilda</strong> : cette injustice historique où les découvertes des femmes sont oubliées ou attribuées à des hommes.
+            </p>
+
+            <p>
+                À travers le regard intime de <em>Ammonite</em>, on redonne enfin à Mary Anning la visibilité qu'elle n'a jamais eue de son vivant.
+            </p>
+
+            <p>
+                L'œuvre devient alors plus qu'un film : une réhabilitation artistique et un hommage à toutes les femmes de science effacées.
+            </p>
+        </section>
+    </main>
+
+      <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__links">
+                <a href="apropos.html">A PROPOS</a>
+                <a href="contact.html">FORMULAIRE DE CONTACT</a>
+                <a href="glossaire.html">GLOSSAIRE</a>
+                <a href="mailto:jeremy.vicaire@edu.univ-fcomte.fr">MAILTO</a>
+            </div>
+            <p class="footer__credit">VICAIRE Jeremy MMI A2</p>
+            <p class="footer__info">
+                "projet réalisé en 2025 dans le cadre d'un exercice pédagogique au département 
+                <a href="https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/" target="_blank">MMi de Montbéliard</a>"
+            </p>
+        </div>
+    </footer>
+
+    <script src="../src/js/menu.js"></script>
+</body>
+</html>

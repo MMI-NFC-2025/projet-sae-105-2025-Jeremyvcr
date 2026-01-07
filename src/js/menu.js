@@ -1,14 +1,14 @@
 // Menu Hamburger
 document.addEventListener('DOMContentLoaded', function() {
     // Sélectionner les éléments
-    const menuToggle = document.querySelector('.menu-toggle');
-    const menuOverlay = document.querySelector('.menu-overlay');
-    const menuClose = document.querySelector('.menu-close');
+    const menuToggle = document.querySelector('.header__menu-toggle');
+    const menu = document.querySelector('.menu');
+    const menuClose = document.querySelector('.menu__close');
     
     // Ouvrir le menu
     if (menuToggle) {
         menuToggle.addEventListener('click', function() {
-            menuOverlay.classList.add('active');
+            menu.classList.add('menu--active');
             document.body.style.overflow = 'hidden'; // Empêcher le scroll
         });
     }
@@ -16,16 +16,16 @@ document.addEventListener('DOMContentLoaded', function() {
     // Fermer le menu
     if (menuClose) {
         menuClose.addEventListener('click', function() {
-            menuOverlay.classList.remove('active');
+            menu.classList.remove('menu--active');
             document.body.style.overflow = ''; // Restaurer le scroll
         });
     }
     
     // Fermer le menu en cliquant sur un lien
-    const menuItems = document.querySelectorAll('.menu-item');
-    menuItems.forEach(item => {
-        item.addEventListener('click', function() {
-            menuOverlay.classList.remove('active');
+    const menuLinks = document.querySelectorAll('.menu__link');
+    menuLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            menu.classList.remove('menu--active');
             document.body.style.overflow = '';
         });
     });

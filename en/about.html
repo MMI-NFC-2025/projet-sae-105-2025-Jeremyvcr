@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Mary Anning</title>
+    <link rel="stylesheet" href="../src/css/mobile-optimized.css">
+    <link rel="stylesheet" href="../src/css/menu.css">
+    <style>
+        .apropos-content {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        .page-title-apropos {
+            font-family: 'Inria Serif', Georgia, serif;
+            font-size: 32px;
+            font-style: italic;
+            font-weight: 400;
+            text-align: center;
+            padding: 30px 20px 20px;
+            margin: 0;
+            color: #000;
+        }
+
+        .profile-card {
+            margin: 30px 20px;
+            border: 3px solid #000;
+            border-radius: 0;
+            background-color: #d4c5a9;
+            padding: 20px;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            position: relative;
+        }
+
+        .profile-image {
+            width: 180px;
+            height: 220px;
+            border-radius: 15px;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+
+        .profile-info {
+            flex: 1;
+        }
+
+        .profile-name {
+            font-family: 'Inria Serif', Georgia, serif;
+            font-size: 24px;
+            font-weight: 700;
+            margin: 0 0 5px 0;
+            color: #000;
+        }
+
+        .profile-details {
+            font-family: 'Inria Serif', Georgia, serif;
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 0;
+            color: #000;
+        }
+
+        .profile-icon {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            border: 2px solid #000;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #fff;
+        }
+
+        .profile-icon svg {
+            width: 30px;
+            height: 30px;
+            fill: #000;
+        }
+
+        .text-content {
+            padding: 20px;
+        }
+
+        .text-content p {
+            font-size: 15px;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            text-align: justify;
+            color: #000;
+        }
+
+        .text-content p:first-of-type {
+            margin-top: 20px;
+        }
+
+        @media (max-width: 480px) {
+            .profile-card {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .profile-image {
+                width: 150px;
+                height: 180px;
+            }
+
+            .profile-icon {
+                top: 15px;
+                right: 15px;
+                width: 40px;
+                height: 40px;
+            }
+
+            .profile-icon svg {
+                width: 24px;
+                height: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <a href="index-mobile.html" class="header__logo">
+            <img src="../assets/img/logo%20dinausore.png" alt="Logo" style="width: 50px; height: auto;">
+        </a>
+        <div class="header__actions">
+            <a href="../fr/apropos.html" class="header__lang">FR</a>
+            <button class="header__menu-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Menu Overlay -->
+    <div class="menu">
+        <div class="menu__header">
+            <a href="index-mobile.html" class="menu__logo">
+                <img src="../assets/img/logo%20dinausore.png" alt="Logo" style="width: 60px; height: auto;">
+            </a>
+            <a href="../fr/apropos.html" class="menu__lang">FR</a>
+            <button class="menu__close" aria-label="Close menu">
+                <svg viewBox="0 0 40 40">
+                    <line x1="10" y1="10" x2="30" y2="30" />
+                    <line x1="30" y1="10" x2="10" y2="30" />
+                </svg>
+            </button>
+        </div>
+        <nav class="menu__nav">
+            <a href="who-is-she.html" class="menu__link">Who is she?</a>
+            <a href="discoveries.html" class="menu__link">Her discoveries</a>
+            <a href="literature.html" class="menu__link">Women of science in literature</a>
+            <a href="film.html" class="menu__link">The film: Ammonite</a>
+            <a href="library.html" class="menu__link">Library object</a>
+            <a href="other-projects.html" class="menu__link">Other projects</a>
+        </nav>
+    </div>
+
+    <!-- Page Content -->
+    <main class="apropos-content">
+        <h1 class="page-title-apropos">About</h1>
+
+        <!-- Profile Card -->
+        <div class="profile-card">
+            <img src="../assets/img/jeremy.png" alt="VICAIRE Jeremy" class="profile-image">
+            <div class="profile-info">
+                <p class="profile-name">VICAIRE</p>
+                <p class="profile-details">Jeremy<br>18 years old<br>MMI 1st year</p>
+            </div>
+            <div class="profile-icon">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                </svg>
+            </div>
+        </div>
+
+        <!-- Text Content -->
+        <div class="text-content">
+            <p>
+                My name is VICAIRE Jeremy, and I am passionate about history, science and everything related to discovery.
+            </p>
+
+            <p>
+                For a long time, fossils and the mysteries of the past have intrigued me: they represent traces left by time, fragments of stories that the Earth has preserved.
+            </p>
+
+            <p>
+                It is this idea — that of finding what has been forgotten — that inspired me to create this site. My project is part of a work on the Matilda Effect, a phenomenon that describes how, throughout history, the contributions of women scientists have often been erased or attributed to men.
+            </p>
+
+            <p>
+                I chose to highlight Mary Anning, a woman from the 19th century, self-taught and passionate about fossils, whose discoveries profoundly marked paleontology, even though her name was long forgotten.
+            </p>
+
+            <p>
+                Through this site, I wanted to tell her story, share her discoveries, and rehabilitate her place in science.
+            </p>
+
+            <p>
+                But even more, I wanted to create a space that pays tribute to all these women who, like Mary, contributed to knowledge without always receiving the recognition they deserved.
+            </p>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__content">
+            <p class="footer__credit">VICAIRE Jeremy MMI A2</p>
+            <div class="footer__links">
+                <a href="about.html">ABOUT</a>
+                <a href="contact.html">CONTACT FORM</a>
+                <a href="glossary.html">GLOSSARY</a>
+                <a href="mailto:jeremy.vicaire@edu.univ-fcomte.fr">MAILTO</a>
+            </div>
+            <p class="footer__info">
+                "project created in 2025 as part of an educational exercise at the 
+                <a href="https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/" target="_blank">MMI department of Montbéliard</a>"
+            </p>
+        </div>
+    </footer>
+
+    <script src="../src/js/menu.js"></script>
+</body>
+</html>

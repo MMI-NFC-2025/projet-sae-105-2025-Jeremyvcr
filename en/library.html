@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library object - Mary Anning</title>
+    <link rel="stylesheet" href="../src/css/mobile-optimized.css">
+    <link rel="stylesheet" href="../src/css/menu.css">
+    <style>
+        .bu-page {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        .bu-page__title {
+            font-family: 'Inria Serif', Georgia, serif;
+            font-size: 28px;
+            font-style: italic;
+            font-weight: 400;
+            text-align: center;
+            padding: 30px 20px 20px;
+            margin: 0;
+        }
+
+        .bu-page__content {
+            padding: 20px;
+        }
+
+        .bu-page__section-title {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .bu-page__content p {
+            font-size: 14px;
+            line-height: 1.7;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .bu-page__book-cover {
+            display: flex;
+            justify-content: center;
+            margin: 30px 0;
+            position: relative;
+        }
+
+        .bu-page__book-cover img {
+            max-width: 280px;
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3);
+            border: 2px solid #000;
+        }
+
+        .bu-page__book-icon {
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            opacity: 0.3;
+        }
+
+        .bu-page__book-icon--top {
+            top: -20px;
+            left: 20px;
+            transform: rotate(-15deg);
+        }
+
+        .bu-page__book-icon--bottom {
+            bottom: -20px;
+            right: 20px;
+            transform: rotate(15deg);
+        }
+
+        .bu-page__link-title {
+            font-size: 16px;
+            font-weight: bold;
+            margin: 40px 0 15px;
+        }
+
+        @media (max-width: 480px) {
+            .bu-page__title {
+                font-size: 24px;
+            }
+
+            .bu-page__content p {
+                font-size: 13px;
+            }
+
+            .bu-page__book-cover img {
+                max-width: 220px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <a href="index-mobile.html" class="header__logo">
+            <img src="../assets/img/logo%20dinausore.png" alt="Logo" style="width: 50px; height: auto;">
+        </a>
+        <div class="header__actions">
+            <a href="../fr/bu.html" class="header__lang">FR</a>
+            <button class="header__menu-toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Menu Overlay -->
+    <div class="menu">
+        <div class="menu__header">
+            <a href="index-mobile.html" class="menu__logo">
+                <img src="../assets/img/logo%20dinausore.png" alt="Logo" style="width: 60px; height: auto;">
+            </a>
+            <a href="../fr/bu.html" class="menu__lang">FR</a>
+            <button class="menu__close" aria-label="Close menu">
+                <svg viewBox="0 0 40 40">
+                    <line x1="10" y1="10" x2="30" y2="30" />
+                    <line x1="30" y1="10" x2="10" y2="30" />
+                </svg>
+            </button>
+        </div>
+        <nav class="menu__nav">
+            <a href="who-is-she.html" class="menu__link">Who is she?</a>
+            <a href="discoveries.html" class="menu__link">Her discoveries</a>
+            <a href="literature.html" class="menu__link">Women of science in literature</a>
+            <a href="film.html" class="menu__link">The film: Ammonite</a>
+            <a href="library.html" class="menu__link">Library object</a>
+            <a href="other-projects.html" class="menu__link">Other projects</a>
+        </nav>
+    </div>
+
+    <!-- Page Content -->
+    <main class="bu-page">
+        <h1 class="bu-page__title">Library object</h1>
+
+        <section class="bu-page__content">
+            <h2 class="bu-page__section-title">Summary:</h2>
+            
+            <p>
+                This book explains how major extinctions have marked the history of life on Earth.
+            </p>
+
+            <p>
+                The author, Éric Buffetaut, renowned paleontologist, explores the possible causes of the disappearance of dinosaurs about 66 million years ago. He presents different scientific hypotheses: asteroid impact, massive volcanic eruptions, climate changes...
+            </p>
+
+            <p>
+                But the book doesn't stop at dinosaurs: it shows that these mass extinctions, as destructive as they were, also enabled the emergence of new life forms. Each crisis has shaped the living world as we know it today.
+            </p>
+
+            <div class="bu-page__book-cover">
+                <svg class="bu-page__book-icon bu-page__book-icon--top" viewBox="0 0 50 50">
+                    <path d="M10,10 L15,5 L15,40 L10,45 Z" fill="#000"/>
+                    <rect x="15" y="10" width="20" height="30" fill="#8B7355" rx="1"/>
+                    <rect x="35" y="12" width="5" height="28" fill="#000"/>
+                </svg>
+                
+                <img src="../assets/img/ericbuffe.avif" alt="The extinction of the dinosaurs - Éric Buffetaut">
+                
+                <svg class="bu-page__book-icon bu-page__book-icon--bottom" viewBox="0 0 50 50">
+                    <path d="M10,10 L15,5 L15,40 L10,45 Z" fill="#000"/>
+                    <rect x="15" y="10" width="20" height="30" fill="#8B7355" rx="1"/>
+                    <rect x="35" y="12" width="5" height="28" fill="#000"/>
+                </svg>
+            </div>
+
+            <h2 class="bu-page__link-title">Link with my Matilda:</h2>
+
+            <p>
+                In <em>The extinction of the dinosaurs</em>, Éric Buffetaut immerses us in the heart of Earth's great extinctions — those moments when life disappears to be reborn anew.
+            </p>
+
+            <p>
+                By studying fossils, he reveals that each crisis erases the memory of the vanished world, ready to tell its story to those who know how to listen.
+            </p>
+
+            <p>
+                This idea resonates deeply with the Matilda Effect.
+            </p>
+
+            <p>
+                Just as fossils testify to a forgotten life, women scientists erased from history are also the "fossils" of human knowledge: precious traces, long invisible, that we gradually rediscover.
+            </p>
+
+            <p>
+                Throughout time, researchers like Mary Anning have unearthed the secrets of the past, without their names surviving their discoveries.
+            </p>
+
+            <p>
+                Today, thanks to science and memory, their stories resurface — like a fossil delicately uncovered from rock.
+            </p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__links">
+                <a href="about.html">ABOUT</a>
+                <a href="contact.html">CONTACT FORM</a>
+                <a href="glossary.html">GLOSSARY</a>
+                <a href="mailto:jeremy.vicaire@edu.univ-fcomte.fr">MAILTO</a>
+            </div>
+            <p class="footer__credit">VICAIRE Jeremy MMI A2</p>
+            <p class="footer__info">
+                "project created in 2025 as part of an educational exercise at the 
+                <a href="https://www.iut-nfc.univ-fcomte.fr/b-u-t-metiers-du-multimedia-et-de-linternet/" target="_blank">MMI department of Montbéliard</a>"
+            </p>
+        </div>
+    </footer>
+
+    <script src="../src/js/menu.js"></script>
+</body>
+</html>
